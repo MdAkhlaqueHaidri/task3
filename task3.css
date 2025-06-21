@@ -1,0 +1,75 @@
+body {
+  font-family: 'Courier New',Courier, monospace;
+  background-color: rgb(165, 154, 165);
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  border-radius: 48%;
+  color: rgb(172, 58, 17);
+  background-color: rgb(104, 152, 173);
+}
+h2 {
+    text-align: center;
+    background-color:#659865
+}
+
+.quiz, .carousel, .joke {
+    background-color: rgb(190, 163, 130);
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 10px;
+  border: 1px solid #8e8181;
+  border-radius: 10px;
+}
+.quiz, .joke {
+    max-height: 800px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 20%;
+  cursor: pointer;
+  background-color: rgb(140, 177, 186);
+}
+#joke {
+    color:rgb(47, 123, 153);
+    font-size: 1.5rem ;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    flex-direction: column;
+  }
+}
+
+button:hover{
+    background-color: goldenrod;
+}

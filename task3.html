@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web App</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+  <header>
+    <h1>My Interactive Web App</h1>
+  </header>
+
+  <!-- Quiz Section -->
+  <section class="quiz">
+    <h2>Quick Quiz</h2>
+    <div id="question-container"></div>
+    <button id="next-btn">Next</button>
+    <p id="score-display"></p>
+  </section>
+
+  <section class="carousel">
+    <h2>Image Carousel</h2>
+    <div class="carousel-container">
+      <button onclick="prevImage()">⟨</button>
+      <img id="carousel-img" src="horse.jpg" alt="carousel image">
+      <button onclick="nextImage()">⟩</button>
+       
+    </div>
+  </section>
+
+  <!-- Joke Fetcher -->
+  <section class="joke">
+    <h2>Want a Joke?</h2>
+    <button onclick="getJoke()">Get Joke</button>
+    <p id="joke"></p>
+  </section>
+
+  <script src="task3.js"></script>
+</body>
+</html>
